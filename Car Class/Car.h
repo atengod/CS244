@@ -6,14 +6,15 @@ class Car
 private:
   int yearModel;
   string make;
-  int speed;	
+  double speed;	
 public:
-  Car(int year, string makee);
+  Car();
+  Car(int year, string make);
   void brake();
   void accelerate();
-  void setSpeed(int sp);
-  int getSpeed();
-  void setMake(string makee);
+  double getSpeed() const;
+  void setSpeed(double);
+  void setMake(string make);
   string getMake();
   void setyearModel(int year);
   int getyearModel();
